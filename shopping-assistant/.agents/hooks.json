@@ -1,0 +1,11 @@
+{
+  "hooks": [
+    {
+      "type": "PreToolUse",
+      "tool": "run_command",
+      "script": "shopping-assistant/.agents/scripts/validate_tool_call.py",
+      "timeout": 10,
+      "enabled": true
+    }
+  ]
+}

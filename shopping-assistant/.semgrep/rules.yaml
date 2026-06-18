@@ -1,0 +1,8 @@
+rules:
+  - id: detect-hardcoded-google-api-key
+    patterns:
+      - pattern-regex: "AIzaSy[A-Za-z0-9_\\-]*"
+    message: "Security Issue: Hardcoded Google API key prefix detected."
+    languages:
+      - python
+    severity: ERROR
