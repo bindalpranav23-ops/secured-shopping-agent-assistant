@@ -75,7 +75,7 @@ def redeem_discount_code(user_id: str, code: str) -> str:
 root_agent = Agent(
     name="root_agent",
     model=CustomGemini(
-        model="gemini-flash-latest",
+        model="gemini-2.5-flash",
         retry_options=types.HttpRetryOptions(attempts=3),
     ),
     instruction="You are a helpful AI shopping assistant for our retail store. Assist customers with their shopping needs and help them redeem discount codes using the provided tool.",
